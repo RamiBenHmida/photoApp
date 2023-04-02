@@ -1,0 +1,38 @@
+<div ><a style="cursor: pointer;" (click)="logout()">logout</a></div>
+<div>
+<h2 id="titre_album">Welcome to My Website</h2>
+</div>
+      
+<!--
+      <div class="row">
+        <div *ngFor="let photo of photos; let i = index" class="col-4">
+          <a>{{photo.user.name}}</a>
+          <img [src]="photo.imageUrl" style="width: 50px;height:50px">
+          <i class="fa fa-like"></i>{{photo.nbOfLikes}}
+        </div>
+      </div>      
+        
+      -->
+      
+			
+               
+                <table>
+                <tr>
+                    <td *ngFor="let photo of photos; let i = index" valign="top">
+                      <div class="block_text">
+                        <a class="text_title">{{photo.user.name}}</a>
+                        <a>
+                          <img src={{url}} alt="" class="image_text"> 
+                        </a> 
+                        <a class="text">Likes:  {{photo.nbOfLikes}} </a>
+                        <button (click)="incrementLikes(photo)">Like</button>
+
+                      </div>
+                    </td>
+                    
+                </tr>
+              </table>
+              
+            
+                  
+
